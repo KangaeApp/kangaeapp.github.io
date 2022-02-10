@@ -1,7 +1,8 @@
 console.log('hi!')
 const { Octokit } = require("@octokit/core");
 // var octokit;
-var CryptoJS = require("crypto-js");
+const AES = require("crypto-js/aes");
+const encUtf8 = require("crypto-js/enc-utf8");
 // const base64 = require('base-64');
 // const auth_encrypted = 'U2FsdGVkX1+DEuTUckU8SWPMMm65nhMLY0Ap80IM/XO43tESbJSXV1eSTqMKN+ZTJJ0DRtHspidsub3qJNNpaQ==';
 // var authKey = localStorage.getItem("authKey") || '';
@@ -29,8 +30,8 @@ var CryptoJS = require("crypto-js");
 
 // function attempt_decryption(password) {
 //   if (isDecrypted) return;
-//   var bytes  = CryptoJS.AES.decrypt(auth_encrypted, password);
-//   var decryptAttempt = bytes.toString(CryptoJS.enc.Utf8);
+//   var bytes  = AES.decrypt(auth_encrypted, password);
+//   var decryptAttempt = bytes.toString(encUtf8);
 //   if (decryptAttempt.length === 0) {
 //     // Decryption failed
 //     console.log("Decryption failed");
