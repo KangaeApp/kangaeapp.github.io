@@ -2,7 +2,7 @@ const { Octokit } = require("@octokit/core");
 var octokit;
 var JsCrypto = require('jscrypto');
 const base64 = require('base-64');
-const auth_encrypted = 'U2FsdGVkX1+0h1Neznmevm45G2kHH7l+75j55FsyoZMn5o7FEyz0wZTUSFuMtNNzts8aBd7na6hdcNkp4IxJzg==';
+const auth_encrypted = 'U2FsdGVkX1/Q+2r94OqnXgfkO+tJDbyw8OqlsRm+0e831LHFLHFz+PquHuSvS7GhkhzHTKDdgY6X0fHGL0Yn2g==';
 var authKey = localStorage.getItem("authKey") || '';
 var isDecrypted = localStorage.getItem("isDecrypted") || false;
 var attemptForm = document.querySelector("#attempt");
