@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/core");
 var octokit;
-var JsCrypto = require('jscrypto');
+import {SHA256} from "jscrypto/es6/SHA256";
 // const base64 = require('base-64');
 // const auth_encrypted = 'U2FsdGVkX1+0h1Neznmevm45G2kHH7l+75j55FsyoZMn5o7FEyz0wZTUSFuMtNNzts8aBd7na6hdcNkp4IxJzg==';
 // var authKey = localStorage.getItem("authKey") || '';
