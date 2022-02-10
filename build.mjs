@@ -3,9 +3,13 @@ import {Parcel} from '@parcel/core';
 
 let bundler = new Parcel({
   entries: './index.html',
+  dist: '',
   defaultConfig: '@parcel/config-default',
   mode: 'production',
-  publicUrl: 'test.kang.ae'
+  defaultTargetOptions: {
+    publicUrl: 'test.kang.ae',
+    distDir: './docs',
+  }
 });
 
 try {
