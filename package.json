@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.html --log-level verbose",
+    "build": "node build.mjs",
     "watch": "parcel index.html"
   },
   "keywords": [],
