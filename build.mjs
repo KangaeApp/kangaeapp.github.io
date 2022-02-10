@@ -3,11 +3,10 @@ import {Parcel} from '@parcel/core';
 
 let bundler = new Parcel({
   entries: './index.html',
-  dist: '',
   defaultConfig: '@parcel/config-default',
   mode: 'production',
   defaultTargetOptions: {
-    publicUrl: 'test.kang.ae',
+    publicUrl: './',
     distDir: './docs',
   }
 });
@@ -17,9 +16,9 @@ try {
   let bundles = bundleGraph.getBundles();
   console.log(`✨ Built ${bundles.length} bundles in ${buildTime}ms!`);
   // File destination.txt will be created or overwritten by default.
-  fs.copyFile('CNAME', 'dist/CNAME', (err) => {
+  fs.copyFile('CNAME', 'docs/CNAME', (err) => {
     if (err) throw err;
-    console.log('CNAME was copied to dist/CNAME');
+    console.log('CNAME was copied to docs/CNAME');
   });
 } catch (err) {
   console.log(err.diagnostics);
