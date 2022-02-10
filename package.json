@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.mjs",
+    "build": "parcel build index.html --no-content-hash --dist-dir docs --public-url ./ && node build.mjs",
     "watch": "parcel index.html"
   },
   "keywords": [],
