@@ -1,7 +1,7 @@
 console.log('hi!')
 const { Octokit } = require("@octokit/core");
 // var octokit;
-// var CryptoJS = require("crypto-js");
+var CryptoJS = require("crypto-js");
 // const base64 = require('base-64');
 // const auth_encrypted = 'U2FsdGVkX1+DEuTUckU8SWPMMm65nhMLY0Ap80IM/XO43tESbJSXV1eSTqMKN+ZTJJ0DRtHspidsub3qJNNpaQ==';
 // var authKey = localStorage.getItem("authKey") || '';
