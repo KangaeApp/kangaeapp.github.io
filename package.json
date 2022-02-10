@@ -14,7 +14,7 @@
     "@octokit/core": "^3.5.1",
     "axios": "^0.25.0",
     "base-64": "^1.0.0",
-    "crypto-js": "^4.1.1",
+    "jscrypto": "^1.0.3",
     "parcel": "^2.3.0",
     "process": "^0.11.10"
   }
