@@ -1,5 +1,5 @@
 console.log('hi!')
-// const { Octokit } = require("@octokit/core");
+const { Octokit } = require("@octokit/core");
 // var octokit;
 // var CryptoJS = require("crypto-js");
 // const base64 = require('base-64');
