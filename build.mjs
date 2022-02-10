@@ -2,8 +2,10 @@ import * as fs from 'fs';
 import {Parcel} from '@parcel/core';
 
 let bundler = new Parcel({
-  entries: 'index.html',
-  defaultConfig: '@parcel/config-default'
+  entries: './index.html',
+  defaultConfig: '@parcel/config-default',
+  mode: 'production',
+  publicUrl: 'test.kang.ae'
 });
 
 try {
